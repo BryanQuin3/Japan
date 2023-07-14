@@ -1,0 +1,178 @@
+/* Reset */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Body Styles */
+body {
+  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+  background-color: #000;
+}
+
+h1 {
+  padding: 0;
+  margin: 0;
+}
+
+p {
+  font-size: 1.8rem;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  list-style-type: none;
+}
+
+button {
+  background: none;
+  border: none;
+  padding-top: 0.5rem;
+  cursor: pointer;
+}
+
+.header {
+  background: url("../img/jean-vella.png");
+  background-size: cover;
+  max-height: 80vh;
+}
+
+@media (min-width: 992px) {
+  .header {
+    min-height: 100vh;
+    max-height: 100vh;
+  }
+}
+.layout {
+  width: 100%;
+  height: 100vh;
+  flex-shrink: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 3rem;
+  font-weight: 700;
+}
+.navegacion-principal a:hover {
+  color: #000;
+}
+
+@media (min-width: 992px) {
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 4rem;
+  }
+}
+.search {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  border: 0.2rem solid #fff;
+  background: transparent;
+  border-radius: 2rem;
+  width: 22rem;
+  height: 3.7rem;
+  margin-right: 4rem;
+}
+.search input {
+  padding-top: 0.3rem;
+  background: none;
+  width: 80%;
+  border: none;
+  color: #fff;
+  outline: none;
+}
+.search input::placeholder {
+  color: #fff;
+}
+
+.btn {
+  text-align: center;
+  background-color: #FF3D00;
+  border-radius: 2rem;
+  width: 8.5rem;
+  height: 3rem;
+}
+.btn:hover {
+  color: #fff;
+}
+
+.titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.titulo h1 {
+  font-size: 10rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: Rokkitt, Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+@media (min-width: 992px) {
+  .titulo h1 {
+    font-size: 24rem;
+  }
+}
+.lugares {
+  margin-top: -5rem;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(1, 1fr);
+  margin: 0 2rem;
+}
+.lugares p {
+  width: 17ch;
+  font-weight: 700;
+}
+.lugares img {
+  object-fit: cover;
+  width: 25%;
+  height: 25%;
+}
+.lugares li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .lugares {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .lugares {
+    margin-top: -5rem;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/*# sourceMappingURL=app.css.map */
