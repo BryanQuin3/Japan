@@ -48,8 +48,13 @@ button {
   cursor: pointer;
 }
 
+menu {
+  margin: 0;
+  padding: 0;
+}
+
 .header {
-  background: url("../img/jean-vella.png");
+  background: url("../img/jean-vella.webp");
   background-size: cover;
   max-height: 100vh;
 }
@@ -202,7 +207,6 @@ button {
   }
 }
 .lugares {
-  margin-top: -5rem;
   display: grid;
   place-items: center;
   grid-template-columns: repeat(1, 1fr);
