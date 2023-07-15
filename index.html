@@ -17,20 +17,28 @@
     <header class="header">
         <div class="layout">
             <nav class="navegacion-principal">
-                <a href="#">history of japan</a>
-                <a href="#">destinations</a>
-                <a href="#">experiences</a>
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-items">
+                    <a href="#">history of japan</a>
+                    <a href="#">destinations</a>
+                    <a href="#">experiences</a>
+                </div>
                 <div class="search">
-                    <input type="text" placeholder="SEARCH...">
-                    <button type="submit">
+                    <input id="input" type="text" placeholder="SEARCH...">
+                    <button id="submit" type="submit">
                         <img src="./build/img/search.png" alt="search">
                     </button>
                 </div>
                 <a href="#" class="btn">Explore</a>
-            </nav>            
-        <div class="titulo">
-            <H1>Japan</H1>
-        </div>
+            </nav>
+                     
+            <div class="titulo">
+                <H1>Japan</H1>
+            </div>
         <section class="lugares">
             <li>
                 <img src="./build/img/tokyo.png" alt="Tokyo">
@@ -51,6 +59,6 @@
         </section>
         </div>
     </header>
-
+    <script src="build/javascript/app.js"></script>
   </body>
 </html>

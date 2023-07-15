@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Reset */
 html {
   box-sizing: border-box;
@@ -50,7 +51,7 @@ button {
 .header {
   background: url("../img/jean-vella.png");
   background-size: cover;
-  max-height: 80vh;
+  max-height: 100vh;
 }
 
 @media (min-width: 992px) {
@@ -68,25 +69,43 @@ button {
 
 .navegacion-principal {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem;
-  padding-top: 3rem;
-  font-weight: 700;
+  padding: 1rem;
+  background-color: transparent;
 }
-.navegacion-principal a:hover {
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 1.8rem;
+  cursor: pointer;
+  margin-left: 4rem;
+}
+
+.menu-icon span {
+  width: 1.8rem;
+  height: 0.2rem;
+  background-color: #fff;
+}
+
+.menu-items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  display: none;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+.menu-items a:hover {
   color: #000;
 }
 
-@media (min-width: 992px) {
-  .navegacion-principal {
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 4rem;
-  }
-}
 .search {
   display: flex;
   justify-content: space-between;
@@ -95,7 +114,7 @@ button {
   border: 0.2rem solid #fff;
   background: transparent;
   border-radius: 2rem;
-  width: 22rem;
+  width: 14.7rem;
   height: 3.7rem;
   margin-right: 4rem;
 }
@@ -112,16 +131,54 @@ button {
 }
 
 .btn {
-  text-align: center;
-  background-color: #FF3D00;
-  border-radius: 2rem;
-  width: 8.5rem;
-  height: 3rem;
-}
-.btn:hover {
-  color: #fff;
+  display: none;
 }
 
+@media (min-width: 768px) {
+  .menu-items {
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  .navegacion-principal {
+    background-color: transparent;
+    margin: 0 4rem;
+  }
+  .btn {
+    display: block;
+    text-align: center;
+    background-color: #FF3D00;
+    border-radius: 2rem;
+    width: 8.5rem;
+    height: 3rem;
+    margin-right: 2rem;
+  }
+  .btn:hover {
+    color: #fff;
+    background-color: #ff6232;
+  }
+  .menu-icon {
+    display: none;
+  }
+  .menu-items {
+    display: flex;
+    flex-direction: row;
+  }
+  .menu-items a {
+    margin-left: 4rem;
+  }
+  .search {
+    width: 16rem;
+  }
+}
+@media (min-width: 1200px) {
+  .navegacion-principal {
+    margin: 0 7rem;
+  }
+  .search {
+    width: 22rem;
+  }
+}
 .titulo {
   display: flex;
   justify-content: center;
@@ -134,6 +191,11 @@ button {
   font-family: Rokkitt, Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+@media (min-width: 768px) {
+  .titulo h1 {
+    font-size: 15rem;
+  }
+}
 @media (min-width: 992px) {
   .titulo h1 {
     font-size: 24rem;
@@ -173,6 +235,10 @@ button {
     margin-top: -5rem;
     grid-template-columns: repeat(4, 1fr);
   }
+}
+/* Estilos para mostrar las opciones del menú */
+.show-menu {
+  display: block;
 }
 
 /*# sourceMappingURL=app.css.map */
