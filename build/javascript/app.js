@@ -7,7 +7,6 @@ menuIcon.addEventListener('click', () => {
     // Alternamos la clase 'show-menu' en los elementos de las opciones del menú
     menuItems.forEach(item => {
         item.classList.toggle('show-menu');
-        console.log(item);
     });
 });
 
