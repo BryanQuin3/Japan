@@ -32,6 +32,10 @@ a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+  font-weight: bold;
+}
+a:hover {
+  color: #000;
 }
 
 li {
@@ -48,15 +52,16 @@ button {
   cursor: pointer;
 }
 
-menu {
-  margin: 0;
+ul {
+  margin: 0 2rem;
   padding: 0;
 }
 
 .header {
   background: url("../img/jean-vella.webp");
   background-size: cover;
-  max-height: 100vh;
+  min-height: 100vh;
+  position: relative;
 }
 
 @media (min-width: 992px) {
@@ -97,20 +102,46 @@ menu {
 
 .menu-items {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   gap: 1rem;
   display: none;
 }
 
-.menu-items a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
+.dropdown_menu {
+  align-items: center;
+  position: absolute;
+  left: 3rem;
+  top: 7rem;
+  width: 80%;
+  padding: 4rem;
+  background: rgba(255, 255, 255, 0.1);
+  background: #000;
+  backdrop-filter: blur(1.5rem);
+  border-radius: 1rem;
+  overflow: hidden;
+  display: none;
+  font-size: 1.8rem;
+  animation: fadeIn 1s ease forwards;
 }
-.menu-items a:hover {
-  color: #000;
+.dropdown_menu a:hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f1f1;
+  color: #FF3D00;
+  border-radius: 1rem;
+  width: 100%;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Define la opacidad inicial de la animación */
+  }
+  to {
+    opacity: 1; /* Define la opacidad final de la animación */
+  }
+}
 .search {
   display: flex;
   justify-content: space-between;
@@ -122,6 +153,10 @@ menu {
   width: 14.7rem;
   height: 3.7rem;
   margin-right: 4rem;
+}
+.search img {
+  width: 95%;
+  height: 95%;
 }
 .search input {
   padding-top: 0.3rem;
@@ -135,12 +170,19 @@ menu {
   color: #fff;
 }
 
+/* Estilos para mostrar las opciones del menú */
+.show-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .btn {
   display: none;
 }
 
 @media (min-width: 768px) {
-  .menu-items {
+  .dropdown_menu {
     display: none;
   }
 }
@@ -161,6 +203,7 @@ menu {
   .btn:hover {
     color: #fff;
     background-color: #ff6232;
+    scale: 1.05;
   }
   .menu-icon {
     display: none;
@@ -210,7 +253,7 @@ menu {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(1, 1fr);
-  margin: 0 2rem;
+  margin: 0 2remD;
 }
 .lugares p {
   width: 17ch;
@@ -239,10 +282,6 @@ menu {
     margin-top: -5rem;
     grid-template-columns: repeat(4, 1fr);
   }
-}
-/* Estilos para mostrar las opciones del menú */
-.show-menu {
-  display: block;
 }
 
 /*# sourceMappingURL=app.css.map */
