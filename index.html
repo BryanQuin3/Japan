@@ -33,9 +33,15 @@
             <a href="#">experiences</a>
           </div>
           <div class="search">
-            <input id="input" type="text" placeholder="SEARCH..." />
-            <button id="submit" type="submit">
-              <img src="./build/img/search.png" alt="search" />
+            <input id="input" type="text" placeholder="SEARCH ..." />
+            <button id="submit" type="submit" aria-label="Search for a place">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="25" height="25">
+                <path d="M21 3C11.602 3 4 10.602 4 20s7.602 17 17 17c3.355 0 6.46-.984 9.094-2.656l12.281 
+                12.281 4.25-4.25L34.5 30.281C36.68 27.421 38 23.88 38 20c0-9.398-7.602-17-17-17zm0 4c7.2 0 
+                13 5.8 13 13s-5.8 13-13 13S8 27.2 8 20 13.8 7 21 7z" transform="scale(5.12)" 
+                fill="#fff" stroke-miterlimit="10" font-family="none" font-weight="none" 
+                font-size="none" text-anchor="none" style="mix-blend-mode:normal"/>
+              </svg>
             </button>
           </div>
           <a href="#" class="btn">Explore</a>
@@ -51,19 +57,31 @@
         <section>
           <ul class="lugares">
             <li>
-                <img src="./build/img/tokyo.png" alt="Tokyo" />
+                <picture>
+                  <source srcset="./build/img/tokyo.webp" type="image/webp">
+                  <img src="./build/img/tokyo.png" alt="Tokyo" />
+                </picture>
                 <p>Get into the future in <span>Tokyo</span></p>
               </li>
               <li>
-                <img src="./build/img/kyoto.png" alt="Kyoto" />
+                <picture>
+                  <source srcset="./build/img/kyoto.webp" type="image/webp">
+                  <img src="./build/img/kyoto.png" alt="Kyoto" />
+                </picture>
                 <p>Turn Back the time <span>Kyoto</span></p>
               </li>
               <li>
-                <img src="./build/img/osaka.png" alt="Tokyo" />
+                <picture>
+                  <source srcset="./build/img/osaka.webp" type="image/webp">
+                  <img src="./build/img/osaka.png" alt="Tokyo" />
+                </picture>
                 <p>Get impressed by <span>Osaka</span></p>
               </li>
               <li>
-                <img src="./build/img/nara.png" alt="Nara" />
+                <picture>
+                  <source srcset="./build/img/nara.webp" type="image/webp">
+                  <img loading="lazy" src="./build/img/nara.png" alt="Nara">
+                </picture>
                 <p>Get into the future in <span>Nara</span></p>
               </li>
           </ul>

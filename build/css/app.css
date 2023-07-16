@@ -154,14 +154,10 @@ ul {
   height: 3.7rem;
   margin-right: 4rem;
 }
-.search img {
-  width: 95%;
-  height: 95%;
-}
 .search input {
   padding-top: 0.3rem;
   background: none;
-  width: 80%;
+  width: 100%;
   border: none;
   color: #fff;
   outline: none;
@@ -253,16 +249,20 @@ ul {
   display: grid;
   place-items: center;
   grid-template-columns: repeat(1, 1fr);
-  margin: 0 2remD;
 }
 .lugares p {
   width: 17ch;
   font-weight: 700;
 }
+.lugares picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .lugares img {
   object-fit: cover;
-  width: 25%;
-  height: 25%;
+  width: 7rem;
+  height: 7rem;
 }
 .lugares li {
   display: flex;
