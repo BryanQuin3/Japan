@@ -1,6 +1,6 @@
 // Obtenemos el ícono del menú y las opciones del menú
 const menuIcon = document.querySelector('.menu-icon');
-const menuItems = document.querySelectorAll('.menu-items');
+const menuItems = document.querySelectorAll('.dropdown_menu');
 
 // Agregamos un evento de clic al ícono del menú
 menuIcon.addEventListener('click', () => {
