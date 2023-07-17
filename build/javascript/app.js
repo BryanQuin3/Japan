@@ -15,3 +15,10 @@ const search = document.querySelector('#submit');
 search.addEventListener('click',()=>{
     input.value='';
 })
+
+window.addEventListener('scroll', function() {
+    let scrollingElement = document.querySelector('.position');
+    let scrollTop = document.documentElement.scrollTop;
+    scrollingElement.style.width = scrollTop*0.15 + 'px';
+  });
+  
