@@ -265,6 +265,11 @@ ul {
   object-fit: cover;
   width: 7rem;
   height: 7rem;
+  transition: scale 1s;
+}
+.lugares img:hover {
+  cursor: pointer;
+  scale: 1.1;
 }
 .lugares li {
   display: flex;
@@ -293,9 +298,19 @@ ul {
   place-items: center;
   color: #fff;
 }
+.main_container .img_container {
+  overflow: hidden;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main_container img {
-  max-width: 100%;
+  max-width: 50rem;
   max-height: 45rem;
+}
+.main_container img:hover {
+  cursor: pointer;
 }
 .main_container p {
   color: #d8d8d8;
@@ -307,7 +322,7 @@ ul {
 }
 
 .city_info {
-  margin: 0 3rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -353,11 +368,12 @@ ul {
     background-color: #d8d8d8;
     border-radius: 1.4rem;
     height: 1rem;
-    width: 20rem;
+    width: 40rem;
   }
   .scroll .position {
     height: 1rem;
     width: 5rem;
+    max-width: 40rem;
     background-color: #FF3D00;
     border-radius: 1.4rem;
   }
