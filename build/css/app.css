@@ -62,6 +62,7 @@ ul {
   background-size: cover;
   min-height: 100vh;
   position: relative;
+  padding-top: 2rem;
 }
 
 @media (min-width: 992px) {
@@ -166,15 +167,27 @@ ul {
   color: #fff;
 }
 
+.btn {
+  display: none;
+  text-align: center;
+  background-color: #FF3D00;
+  border-radius: 2rem;
+  width: 10rem;
+  height: 3rem;
+  box-shadow: 0 0.1rem 1.5rem 0 #FF3D00;
+  margin-right: 2rem;
+}
+.btn:hover {
+  color: #fff;
+  scale: 1.05;
+  box-shadow: 0 0.4rem 2.5rem 0 #FF3D00;
+}
+
 /* Estilos para mostrar las opciones del menú */
 .show-menu {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.btn {
-  display: none;
 }
 
 @media (min-width: 992px) {
@@ -189,17 +202,6 @@ ul {
   }
   .btn {
     display: block;
-    text-align: center;
-    background-color: #FF3D00;
-    border-radius: 2rem;
-    width: 8.5rem;
-    height: 3rem;
-    margin-right: 2rem;
-  }
-  .btn:hover {
-    color: #fff;
-    background-color: #ff6232;
-    scale: 1.05;
   }
   .menu-icon {
     display: none;
@@ -281,6 +283,107 @@ ul {
   .lugares {
     margin-top: -5rem;
     grid-template-columns: repeat(4, 1fr);
+  }
+}
+.main_container {
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 5rem;
+  place-items: center;
+  color: #fff;
+}
+.main_container img {
+  max-width: 100%;
+  max-height: 45rem;
+}
+.main_container p {
+  color: #d8d8d8;
+  margin-top: 0;
+}
+
+.scroll {
+  display: none;
+}
+
+.city_info {
+  margin: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.city_info h2 {
+  font-size: 5rem;
+  margin: -5rem 0 0 0;
+}
+.city_info p {
+  margin-bottom: 3rem;
+}
+.city_info .btn {
+  display: block;
+}
+.city_info .cities {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 0 2.5rem 0;
+  column-gap: 5rem;
+}
+.city_info .cities a {
+  text-decoration: underline;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 2rem;
+}
+.city_info .cities a:focus {
+  color: #FF3D00;
+}
+.city_info .cities a:hover {
+  cursor: pointer;
+  color: #FF3D00;
+}
+
+@media (min-width: 768px) {
+  .main_container {
+    grid-template-columns: 40% 40% 10%;
+  }
+  .scroll {
+    display: block;
+    transform: rotate(90deg);
+    background-color: #d8d8d8;
+    border-radius: 1.4rem;
+    height: 1rem;
+    width: 20rem;
+  }
+  .scroll .position {
+    height: 1rem;
+    width: 5rem;
+    background-color: #FF3D00;
+    border-radius: 1.4rem;
+  }
+  .scroll p {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    font-weight: 600;
+  }
+  .city_info {
+    align-items: start;
+  }
+}
+@media (min-width: 992px) {
+  .main_container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+  .city_info p {
+    margin-bottom: 1rem;
+  }
+  .cities {
+    margin: 0;
+    column-gap: 0;
+  }
+  .cities p {
+    margin: 0;
   }
 }
 
