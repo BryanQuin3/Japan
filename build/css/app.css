@@ -13,7 +13,7 @@ html {
 
 /* Body Styles */
 body {
-  font-family: Roboto, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   font-size: 1.6rem;
   line-height: 2;
   background-color: #000;
@@ -32,7 +32,7 @@ a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: 600;
 }
 a:hover {
   color: #000;
@@ -166,6 +166,7 @@ ul {
   border: none;
   color: #fff;
   outline: none;
+  font-weight: normal;
 }
 .search input::placeholder {
   color: #fff;
@@ -243,7 +244,7 @@ ul {
   font-size: 10rem;
   color: #fff;
   text-transform: uppercase;
-  font-family: Rokkitt, Pro Display, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-family: "Rokkitt", "Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
 @media (min-width: 768px) {
@@ -307,16 +308,10 @@ ul {
   place-items: center;
   color: #fff;
 }
-.main_container .img_container {
-  overflow: hidden;
-  border-radius: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .main_container img {
   max-width: 50rem;
   max-height: 45rem;
+  animation: fadeIn 2s ease forwards;
 }
 .main_container img:hover {
   cursor: pointer;
