@@ -3,10 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Experience the best of Japan's top
+    <meta
+      name="description"
+      content="Experience the best of Japan's top
     destinations! Discover ancient traditions in Kyoto, vibrant city life in
     Tokyo, and serene beauty in Hokkaido. Plan your unforgettable journey
-    today.">
+    today."
+    />
     <link rel="stylesheet" href="build/css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,21 +38,36 @@
           <div class="search">
             <input id="input" type="text" placeholder="SEARCH ..." />
             <button id="submit" type="submit" aria-label="Search for a place">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="25" height="25">
-                <path d="M21 3C11.602 3 4 10.602 4 20s7.602 17 17 17c3.355 0 6.46-.984 9.094-2.656l12.281 
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 256 256"
+                width="25"
+                height="25"
+              >
+                <path
+                  d="M21 3C11.602 3 4 10.602 4 20s7.602 17 17 17c3.355 0 6.46-.984 9.094-2.656l12.281 
                 12.281 4.25-4.25L34.5 30.281C36.68 27.421 38 23.88 38 20c0-9.398-7.602-17-17-17zm0 4c7.2 0 
-                13 5.8 13 13s-5.8 13-13 13S8 27.2 8 20 13.8 7 21 7z" transform="scale(5.12)" 
-                fill="#fff" stroke-miterlimit="10" font-family="none" font-weight="none" 
-                font-size="none" text-anchor="none" style="mix-blend-mode:normal"/>
+                13 5.8 13 13s-5.8 13-13 13S8 27.2 8 20 13.8 7 21 7z"
+                  transform="scale(5.12)"
+                  fill="#fff"
+                  stroke-miterlimit="10"
+                  font-family="none"
+                  font-weight="none"
+                  font-size="none"
+                  text-anchor="none"
+                  style="mix-blend-mode: normal"
+                />
               </svg>
             </button>
           </div>
           <a href="#" class="btn">Explore</a>
         </nav>
-        <div class="dropdown_menu">
-          <a href="#">history of japan</a>
-          <a href="#">destinations</a>
-          <a href="#">experiences</a>
+        <div class="father">
+          <div class="dropdown_menu">
+            <a href="#">history of japan</a>
+            <a href="#">destinations</a>
+            <a href="#">experiences</a>
+          </div>
         </div>
         <div class="titulo">
           <h1>Japan</h1>
@@ -57,63 +75,141 @@
         <section>
           <ul class="lugares">
             <li>
-                <picture>
-                  <source srcset="./build/img/tokyo.webp" type="image/webp">
-                  <img src="./build/img/tokyo.png" alt="Tokyo" />
-                </picture>
-                <p>Get into the future in <span>Tokyo</span></p>
-              </li>
-              <li>
-                <picture>
-                  <source srcset="./build/img/kyoto.webp" type="image/webp">
-                  <img src="./build/img/kyoto.png" alt="Kyoto" />
-                </picture>
-                <p>Turn Back the time <span>Kyoto</span></p>
-              </li>
-              <li>
-                <picture>
-                  <source srcset="./build/img/osaka.webp" type="image/webp">
-                  <img src="./build/img/osaka.png" alt="Tokyo" />
-                </picture>
-                <p>Get impressed by <span>Osaka</span></p>
-              </li>
-              <li>
-                <picture>
-                  <source srcset="./build/img/nara.webp" type="image/webp">
-                  <img loading="lazy" src="./build/img/nara.png" alt="Nara">
-                </picture>
-                <p>Get into the future in <span>Nara</span></p>
-              </li>
+              <picture>
+                <source srcset="./build/img/tokyo.webp" type="image/webp" />
+                <img src="./build/img/tokyo.png" alt="Tokyo" />
+              </picture>
+              <p>Get into the future in <span>Tokyo</span></p>
+            </li>
+            <li>
+              <picture>
+                <source srcset="./build/img/kyoto.webp" type="image/webp" />
+                <img src="./build/img/kyoto.png" alt="Kyoto" />
+              </picture>
+              <p>Turn Back the time <span>Kyoto</span></p>
+            </li>
+            <li>
+              <picture>
+                <source srcset="./build/img/osaka.webp" type="image/webp" />
+                <img src="./build/img/osaka.png" alt="Tokyo" />
+              </picture>
+              <p>Get impressed by <span>Osaka</span></p>
+            </li>
+            <li>
+              <picture>
+                <source srcset="./build/img/nara.webp" type="image/webp" />
+                <img loading="lazy" src="./build/img/nara.png" alt="Nara" />
+              </picture>
+              <p>Get into the future in <span>Nara</span></p>
+            </li>
           </ul>
         </section>
       </div>
     </header>
-    <main class="main_container">
-      <picture>
-        <source srcset="./build/img/tales.webp" type="image/webp">
-        <img loading="lazy" src="./build/img/tales.png" alt="tales">
-      </picture>
-      <section class="city_info">
-        <h2>Tales of Japan</h2>
-        <p>
-          Immerse yourself in
-          the rich tapestry of Japanese folklore, exploring mythical creatures
-          and timeless wisdom. From legendary samurai
-          adventures to haunting tales of spirits, this anthology reveals
-          Japan's cultural heritage and imagination.
-        </p>
+    <main>
+      <section class="main_container tokyo" id="tokyo">
+        <picture>
+          <source srcset="./build/img/tales.webp" type="image/webp" />
+          <img loading="lazy" src="./build/img/tales.png" alt="tales" />
+        </picture>
+        <section class="city_info">
+          <h2>Tales of Japan</h2>
+          <p>
+            Immerse yourself in the rich tapestry of Japanese folklore,
+            exploring mythical creatures and timeless wisdom. From legendary
+            samurai adventures to haunting tales of spirits, this anthology
+            reveals Japan's cultural heritage and imagination.
+          </p>
           <ul class="cities">
-              <li><a href="#t">Tokyo</a></li>
-              <li><a href="#t">Kyoto</a></li>
-              <li><a href="#t">Osaka</a></li>
-              <li><a href="#t">Nara</a></li>
+            <li><a href="#tokyo" class="go_tokyo">Tokyo</a></li>
+            <li><a href="#kyoto" class="go_kyoto">Kyoto</a></li>
+            <li><a href="#osaka" class="go_osaka">Osaka</a></li>
+            <li><a href="#nara" class="go_nara">Nara</a></li>
           </ul>
           <a href="#" class="btn">About us</a>
-      </section>
-      <div class="scroll">
-        <div class="position">
+        </section>
+        <div class="scroll">
+          <div class="position"></div>
         </div>
-      </div>
+      </section>
+      <!-- Kyoto -->
+      <section class="main_container kyoto hidden" id="kyoto">
+        <picture>
+          <source srcset="./build/img/kyoto-tales.webp" type="image/webp" />
+          <img loading="lazy" src="./build/img/kyoto-tales.png" alt="tales" />
+        </picture>
+        <section class="city_info">
+          <h2>Legends of Japan</h2>
+          <p>
+            Embark on a captivating exploration of Kyoto, where ancient
+            traditions and mythical stories intertwine. Delve into the
+            enchanting world of Japanese folklore as you discover the tales of
+            noble warriors and mystical.
+          </p>
+          <ul class="cities">
+            <li><a href="#tokyo" class="go_tokyo">Tokyo</a></li>
+            <li><a href="#kyoto" class="go_kyoto">Kyoto</a></li>
+            <li><a href="#osaka" class="go_osaka">Osaka</a></li>
+            <li><a href="#nara" class="go_nara">Nara</a></li>
+          </ul>
+          <a href="#" class="btn">About us</a>
+        </section>
+        <div class="scroll">
+          <div class="position"></div>
+        </div>
+      </section>
+      <!-- osaka -->
+      <section class="main_container osaka hidden" id="osaka">
+        <picture>
+          <source srcset="./build/img/osaka-tales.webp" type="image/webp" />
+          <img loading="lazy" src="./build/img/osaka-tales.png" alt="Osaka" />
+        </picture>
+        <section class="city_info">
+          <h2>Mystical Osaka</h2>
+          <p>
+            Unveil the enigmatic allure of Osaka, where secrets and legends
+            whisper through its bustling streets. Prepare to be captivated by
+            the hidden mysteries that lie beneath the vibrant cityscape. From
+            the eerie depths of haunted castles to the ninja clans.
+          </p>
+          <ul class="cities">
+            <li><a href="#tokyo" class="go_tokyo">Tokyo</a></li>
+            <li><a href="#kyoto" class="go_kyoto">Kyoto</a></li>
+            <li><a href="#osaka" class="go_osaka">Osaka</a></li>
+            <li><a href="#nara" class="go_nara">Nara</a></li>
+          </ul>
+          <a href="#" class="btn">About us</a>
+        </section>
+        <div class="scroll">
+          <div class="position"></div>
+        </div>
+      </section>
+      <!-- nara -->
+      <section class="main_container nara hidden" id="nara">
+        <picture>
+          <source srcset="./build/img/nara-tales.webp" type="image/webp" />
+          <img loading="lazy" src="./build/img/nara-tales.png" alt="Nara" />
+        </picture>
+        <section class="city_info">
+          <h2>Tales of Serenity</h2>
+          <p>
+            Step into the serene realm of Nara, where captivating tales unfold
+            amidst tranquil beauty. Explore the harmonious blend of nature and
+            history as you immerse yourself in the timeless stories that have
+            graced this ancient city.
+          </p>
+          <ul class="cities">
+            <li><a href="#tokyo" class="go_tokyo">Tokyo</a></li>
+            <li><a href="#kyoto" class="go_kyoto">Kyoto</a></li>
+            <li><a href="#osaka" class="go_osaka">Osaka</a></li>
+            <li><a href="#nara" class="go_nara">Nara</a></li>
+          </ul>
+          <a href="#" class="btn">About us</a>
+        </section>
+        <div class="scroll">
+          <div class="position"></div>
+        </div>
+      </section>
     </main>
     <script src="build/javascript/script.js"></script>
   </body>

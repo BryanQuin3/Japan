@@ -16,9 +16,27 @@ search.addEventListener('click',()=>{
     input.value='';
 })
 
-window.addEventListener('scroll', function() {
-    let scrollingElement = document.querySelector('.position');
-    let scrollTop = document.documentElement.scrollTop;
-    scrollingElement.style.width = scrollTop*0.4 + 'px';
-  });
+// window.addEventListener('scroll', function() {
+//     let scrollingElement = document.querySelector('.position');
+//     let scrollTop = document.documentElement.scrollTop;
+//     scrollingElement.style.width = scrollTop*0.4 + 'px';
+//   });
   
+const btns = document.querySelectorAll('.go_tokyo, .go_kyoto, .go_osaka, .go_nara');
+const elements = {
+  'go_tokyo': document.querySelector('.tokyo'),
+  'go_kyoto': document.querySelector('.kyoto'),
+  'go_osaka': document.querySelector('.osaka'),
+  'go_nara': document.querySelector('.nara')
+};
+
+btns.forEach(btn => btn.addEventListener('click', () => {
+  // Ocultar todos los elementos
+  Object.values(elements).forEach(element => element.classList.add('hidden'));
+
+  // Mostrar el elemento correspondiente al botón que se hizo clic
+  const targetElement = elements[btn.classList[0]];
+  targetElement.classList.remove('hidden');
+}));
+
+
