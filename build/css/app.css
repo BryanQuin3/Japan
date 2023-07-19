@@ -333,7 +333,7 @@ ul {
   align-items: center;
 }
 .city_info h2 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin: -5rem 0 0 0;
 }
 .city_info p {
@@ -386,6 +386,9 @@ ul {
   }
   .city_info {
     align-items: start;
+  }
+  .city_info h2 {
+    font-size: 5rem;
   }
 }
 .tokyo .position {
